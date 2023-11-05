@@ -22,8 +22,8 @@ public class FrontControllerServletV1 extends HttpServlet {
     // 이러면~ 서블릿이 처음 생성될때 ~ 위에 있는 Map 에다가 아래의 값들을 넣어줌..~!
     public FrontControllerServletV1() {
         controllerMap.put("/front-controller/v1/members/new-form",new MemberFormControllerV1());
-        controllerMap.put("/front-controller/v1/members/sav",new MemberSaveControllerV1());
-        controllerMap.put("/front-controller/v1/members ",new MemberListControllerV1());
+        controllerMap.put("/front-controller/v1/members/save",new MemberSaveControllerV1());
+        controllerMap.put("/front-controller/v1/members",new MemberListControllerV1());
     }
 
     @Override
