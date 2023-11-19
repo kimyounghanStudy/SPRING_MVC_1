@@ -24,6 +24,7 @@ public class HelloServlet extends HttpServlet {
         response.setCharacterEncoding("utf-8");// http content type (헤더 정보)
         response.getWriter().write("hello"+username);  // http body 에 들어감
         // 아 ~ /hello 으로 들어가고 .. 쿼리파라미터를 파싱해서 request 및 response 를 하는구나..?!
+        //git test1234
 
     }
 }
