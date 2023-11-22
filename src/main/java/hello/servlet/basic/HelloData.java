@@ -11,5 +11,5 @@ public class HelloData {
      // git test
 //what?
 
-    // 터미널 연습 원격 master에 바로 커밋
+    // 터미널 연습 원격 master에 바로 커밋?
 }
