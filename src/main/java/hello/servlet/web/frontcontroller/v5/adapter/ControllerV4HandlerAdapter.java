@@ -36,6 +36,7 @@ public class ControllerV4HandlerAdapter implements MyHandlerAdapter {
         // 어뎁터의 중요한 이유!! 원하는 값에 맞게 변환시켜주는 역활임 !
 
         // 좀더 확장하면 모든 프론트 컨트롤러에 연결된 모든 부분을 인터페이스화...
+        //ㅇㅎ
         ModelView mv = new ModelView(viewName);
         mv.setModel(model);
         return mv;
