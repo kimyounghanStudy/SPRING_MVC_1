@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 public class Item {
 
-    private long id;
+    private Long id;
     private String itemName;
     private Integer price; // null  일경우 대비
     private Integer quantity;
