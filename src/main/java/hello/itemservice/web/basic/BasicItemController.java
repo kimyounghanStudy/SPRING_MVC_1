@@ -75,6 +75,21 @@ public class BasicItemController {
         itemRepository.save(item);
         return "basic/item";
     }
+    @GetMapping("/{itemId}/edit")
+    public String editForm(@PathVariable(name = "itemId") Long itemId, Model model){
+        Item findItem = itemRepository.findById(itemId);
+        model.addAttribute("item",findItem);
+
+        return "basic/editForm";
+    }
+
+    @PostMapping("/{itemId}/edit")
+    public String edit(@PathVariable(name = "itemId") Long itemId ,@ModelAttribute Item item){
+        //ModelAttribute 가 자동으로 set ! 네임 이없으면 클래스명 따라서감~!
+        itemRepository.update(itemId,item);
+
+        return "redirect:/basic/items/{itemId}";
+    }
 
 
     /**
